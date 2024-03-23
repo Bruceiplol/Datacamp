@@ -25,3 +25,6 @@ plt.ylabel("Duration (min)")
 plt.title("Movie Duration by Year of Release")
 
 plt.show()
+
+# Question: "Are we certain that movies are getting shorter?" by assigning either "yes" or "no" to the variable answer.
+answer = "no"
