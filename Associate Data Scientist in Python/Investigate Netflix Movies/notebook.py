@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Start coding!
-netflix_df = pd.read_csv("netflix_data.csv", index_col = 0)
+netflix_df = pd.read_csv("./netflix_data.csv", index_col = 0)
 netflix_subset = netflix_df[netflix_df["type"] != "TV Show"]
 netflix_movies = netflix_subset.iloc[:, [1,4,6,7,9]]
 short_movies = netflix_movies[netflix_movies["duration"] < 60]
