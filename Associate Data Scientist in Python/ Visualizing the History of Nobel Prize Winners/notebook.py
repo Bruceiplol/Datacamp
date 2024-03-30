@@ -27,7 +27,7 @@ ax1 = sns.relplot(x="decade", y="usa_winner", data=prop_usa_winner, kind="line")
 df["female_winner"] = df["sex"] == "Female"
 prop_female_winner = df.groupby(["decade", "category"], as_index=False)["female_winner"].mean()
 max_female_winner = prop_female_winner[prop_female_winner["female_winner"]==prop_female_winner["female_winner"].max()]
-max_female_dict ={prop_female_winner["decade"].values[0]:prop_female_winner["category"].values[0]}
+max_female_dict ={max_female_winner["decade"].values[0]:max_female_winner["category"].values[0]}
 print(max_female_dict)
 ax2 = sns.relplot(x="decade", y="female_winner", data=prop_female_winner, kind="line", hue="category")
 
