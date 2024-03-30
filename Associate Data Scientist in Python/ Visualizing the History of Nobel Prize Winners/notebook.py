@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Start coding here!
-df = pd.read_csv("data/nobel.csv")
+df = pd.read_csv("./nobel.csv")
 print(df.head())
 print(df.info())
 
