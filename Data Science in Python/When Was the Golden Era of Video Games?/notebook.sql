@@ -12,6 +12,7 @@ ON g.name = r.name
 GROUP BY g.year
 HAVING COUNT(g.name) >=4
 ORDER BY avg_critic_score DESC
+LIMIT 10;
 
 -- golden_years
 SELECT u.year, u.num_games, c.avg_critic_score, u.avg_user_score, c.avg_critic_score - u.avg_user_score AS diff
